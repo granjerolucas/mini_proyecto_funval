@@ -1,0 +1,148 @@
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark_stale_gray: hsl(234, 29%, 20%);
+  --charcoal_grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  font-family: "Roboto", Courier, monospace;
+  font-size: 16px;
+}
+body {
+  background-color: var(--charcoal_grey);
+}
+.card-subcribe {
+  .card-body {
+    /* padding: 0; */
+    /* background-color: red; */
+    padding: 1.5rem;
+  }
+}
+
+.card-title,
+.modal-title {
+  font-size: 2.5rem;
+  /* text-align: center; */
+}
+.status-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-top: -0.8rem;
+  margin-bottom: 2.7rem;
+}
+#exampleModal {
+  .modal-dialog {
+    margin: 0px;
+    height: 100%;
+    .modal-content {
+      height: 100%;
+    }
+    /* height:  */
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  body {
+    /* background-color: red; */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body {
+    /* background-color: blue; */
+  }
+  .rounded-subscribe {
+    border-radius: 2rem;
+  }
+  .card-subcribe {
+    .card-body {
+      /* padding: 0; */
+      /* background-color: red; */
+      padding: 3rem 2rem 3rem 4rem;
+
+      .card-text,
+      .list-unstyled > li {
+        font-size: 1rem;
+      }
+    }
+  }
+  .card-image img {
+    padding: 1.3rem 1.3rem 1.3rem 2.3rem;
+  }
+  .card-title,
+  .modal-title {
+    font-size: 3.5rem;
+    /* text-align: center; */
+  }
+
+  .modal#exampleModal .modal-body {
+    padding: 3.8rem;
+  }
+
+  .status-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-top: -0.8rem;
+    margin-bottom: 2.7rem;
+  }
+  #exampleModal {
+    .modal-dialog {
+      margin: auto;
+      height: auto;
+      .modal-content {
+        height: auto
+      }
+      /* height:  */
+    }
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+.btn-subscribe {
+  background-color: var(--dark_stale_gray);
+  color: var(--white);
+  font-size: 0.9rem;
+  padding: 1rem;
+  &:hover {
+    background-color: var(--tomato);
+    color: var(--white);
+  }
+}
+.input-subscribe {
+  label {
+    font-size: 0.7rem;
+  }
+  input {
+    font-size: 1rem;
+    /* color: var(--grey); */
+    padding: 1rem;
+    &::placeholder {
+      color: var(--grey);
+    }
+  }
+}
+
+.modal-title {
+  line-height: 3.6rem;
+}
+
+.text-error {
+  color: var(--tomato);
+}
