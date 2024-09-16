@@ -4,7 +4,7 @@ const emailInput = document.querySelector("#emailInput");
 const emailConfim = document.querySelector("#emailConfim");
 const modal = new bootstrap.Modal('#exampleModal')
 const errorMessage = "Valid email required";
-modal.show()
+// modal.show()
 
 btnSubmit.addEventListener("click", function (e) {
   e.preventDefault();
